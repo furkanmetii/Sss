@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>dgkokurba</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    img {
+      width: 90%;
+      max-width: 600px;
+      border: 4px solid #fff;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    p {
+      margin-top: 30px;
+      font-size: 1.1em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 İyi ki Doğdun Kübra 🎉</h1>
+
+  <!-- İlk resimle başlar, tıklanınca değişir -->
+  <img id="degisenResim" src="SmartSelect_20250703-095030_Chrome.jpg" alt="Doğum Günü" onclick="resmiDegistir()">
+
+  <p>
+    iyi ki doğdouun kubrağa. allah saana saalııık ümür versin.hep allah için işeeseydin çalışasaydın.
+    hiç eallah seni imaenden ayırmasınn. heep bile allah için işleseydin. allah için
+  </p>
+
+  <script>
+    let guncel = 1;
+    function resmiDegistir() {
+      const img = document.getElementById('degisenResim');
+      if (guncel === 1) {
+        img.src = "nah.png"; // ikinci resme geç
+        guncel = 2;
+      } else {
+        img.src = "SmartSelect_20250703-095030_Chrome.jpg"; // ilk resme geri dön
+        guncel = 1;
+      }
+    }
+  </script>
+
+</body>
+</html>
